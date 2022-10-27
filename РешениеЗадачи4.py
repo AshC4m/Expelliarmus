@@ -21,7 +21,7 @@ time = 0
 i = 0
 while i < 3:
   import random
-  k = random.randint(0,len(my_favorite_songs))
+  k = random.randint(0,len(my_favorite_songs) - 1)
   time += my_favorite_songs[k][1]
   my_favorite_songs.remove(my_favorite_songs[k])
   i += 1
