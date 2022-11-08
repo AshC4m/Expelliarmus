@@ -1,0 +1,5 @@
+# Напишите функцию, которая преобразует входную строку в верхний регистр.
+
+s = 'abcd'
+print ('Uppercase string =', s.upper() )
+print ('Original string =', s)
