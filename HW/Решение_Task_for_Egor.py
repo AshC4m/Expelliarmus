@@ -36,10 +36,10 @@ k = 0
 for i in text:
   i.pop(len(i)-1)
   for j in i:
-    if len(j) <= 3:
+    if len(j) < 3:
       i.remove(j)
   for j in i:
-    if len(j) <= 3:
+    if len(j) < 3:
       i.remove(j)
   text[k] = i
   k += 1
