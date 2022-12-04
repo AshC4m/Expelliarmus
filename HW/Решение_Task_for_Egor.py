@@ -43,4 +43,5 @@ for i in text:
       i.remove(j)
   text[k] = i
   k += 1
-print(text)
+for i in text:
+  print(i)
