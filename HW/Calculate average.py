@@ -7,3 +7,9 @@ def avg(A):
   return S
 Sred = avg(A)
 print(Sred)
+
+# Нормальное решение) 
+# я его записал чуть покорче
+
+def avg(A):
+    return sum(A) / len(A)
