@@ -45,3 +45,11 @@ for i in text:
   k += 1
 for i in text:
   print(i)
+  
+# Ох ты ж!!)
+# Ну это прикольный вариант))
+# Результат действительно хороший) есть немного поинтереснее решение)
+
+# Однострочник
+w = [[x for x in line.split() if len(x)>6] for line in text.split('\n')]
+pprint(w)
