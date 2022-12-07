@@ -1,9 +1,6 @@
 # https://www.codewars.com/kata/577a98a6ae28071780000989
 tst1 = [4, 89, 2398, 294, 14, 988]
 tst2 = [44, 66, 898, 33, 9999, 15]
-
-# using max() + min() + "+" operator
-# maximum and minimum values in two lists
 max1 = max(tst1)
 min1 = min(tst1)
 max2 = max(tst2)
