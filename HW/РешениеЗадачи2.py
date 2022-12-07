@@ -13,3 +13,59 @@ allppl = 0
 for i in ppl:
   allppl = allppl + int(i)
 print(f"Общий размер населения - {allppl} тысяч человек")
+
+# В задаче немного подразумевалось иное. Необходимо было создать список списков с населением
+# Такой список запишем в town_population
+
+towns = ['Москва', 'Санкт-Петербург', 'Сочи', 'Владивосток']
+
+town_population = [
+    ['Москва', 17000000], 
+    ['Санкт-Петербург', 5400000], 
+    ['Сочи', 500000], 
+    ['Владивосток', 600000]
+]
+
+# Решение 1 с функцией
+def total_sun(lst):
+    total = 0
+
+    for i in lst:
+        total += i[1]
+
+    return total
+
+# Решение 2 с функцией в одну строку
+def total_sum(lst):
+    return sum([i[1] for i in lst])
+
+print(total_sum(population))
+
+
+# Решение 3 с суммой результатов индексации
+population_sum_2 = town_population[0][1] +  town_population[1][1] + town_population[2][1] + town_population[3][1]
+
+
+# Вывод на консоль ответов
+print('Население Москвы -', town_population[0][1], 'человек')
+
+print('Итого размер населения -', population_sum_1, 'человек')
+
+print('Итого размер населения -', population_sum_2, 'человек (решение через for)')
+
+# Решение 4 с filter
+City_list =[['Санкт-Петербург', 3000000] ,
+['Пекин', 22000000] ,
+['Париж',2000000],
+['Лондон',9000000]]
+
+print(f'Население {City_list[1][0]}а - {City_list[1][1]} человек')
+
+
+my_list =sum(City_list, [])
+
+my_filter = list(filter(lambda x: type(x) is int, my_list))
+
+print(f'Итого размер населения - {sum(my_filter)} человек')
+
+
