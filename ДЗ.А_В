@@ -1,0 +1,4 @@
+a = {"Moscow": 200000, "Rostov": 30000, "Piter":300000}
+print(a["Rostov"])
+sumnasel = a["Moscow"] + a["Rostov"] + a["Piter"]
+print(sumnasel)
