@@ -25,3 +25,5 @@ for song in sample (my_favorite_songs.keys(), k=3):
      res += my_favorite_songs[song]
 
 print (sum(my_favorite_songs.values()))
+
+# В виде функции!?!?
