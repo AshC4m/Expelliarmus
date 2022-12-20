@@ -18,3 +18,18 @@ my_favorite_songs = [
     tri_pesni = my_favorite_songs[2][1] +my_favorite_songs[5][1]+my_favorite_songs[8][1]
 tri_pesni = round (tri_pesni, 2)
 print ('Три песни звучат', tri_pesni, 'минут')
+
+# Так условия задачи были про словарь!!!
+my_favorite_songs = {
+    'Waste a Moment': 3.03,
+    'New Salvation': 4.02,
+    'Staying\' Alive': 3.40,
+    'Out of Touch': 3.03,
+    'A Sorta Fairytale': 5.28,
+    'Easy': 4.15,
+    'Beautiful Day': 4.04,
+    'Nowhere to Run': 2.58,
+    'In This World': 4.02,
+}
+
+# и нужно использовать модуль random чтобы вывести случайные песни
