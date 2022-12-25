@@ -1,0 +1,6 @@
+messages = "привет"
+print(messages.swapcase())
+
+
+messages = "ПРИВЕТ"
+print(messages.swapcase())
