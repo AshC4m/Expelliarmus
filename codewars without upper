@@ -4,3 +4,10 @@ print(messages.swapcase())
 
 messages = "ПРИВЕТ"
 print(messages.swapcase())
+
+# Не знал о таком методе)
+моя идея (если без методов), была такой
+
+def make_upper_case(s):
+    return ''.join(((chr(ord(l)-32) if ord('a') <= ord(l) <= ord('z') or ord('а') <= ord(l) <= ord('я') else l) for l in s))
+
