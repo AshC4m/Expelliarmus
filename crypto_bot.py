@@ -4,7 +4,7 @@
 # Вводные данные:
 cd /content/drive/MyDrive/Colab Notebooks/Project
 
-mport pandas as pd
+import pandas as pd
 import cred
 import numpy as np '''Нужен для рассчета среднего значения'''
 info = pd.read_csv('info.csv', index_col='currency') '''Импортировали info.csv и заменили индексацию на валюту для удобства'''
