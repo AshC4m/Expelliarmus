@@ -1,0 +1,16 @@
+# функция о принятие покурки или продажи 
+
+def trader(curr):
+  df = get_data(curr)
+  num = get_useful_data(df)
+  if info['position'][curr] != num:
+    if num == 1:
+      print(f'Для {curr}. Быстрая скользящая пересекла среднюю снизу вверх, КУПИТЬ!')
+    else:
+      print(f'Для {curr}. Быстрая скользящая пересекла среднюю сверху вниз, ПРОДАВАТЬ!')
+    info['position'][curr] = num
+  elif num == 1:
+    print(f'Рано продавать {curr}')
+  elif num == 0:
+    print(f'Рано покупать {curr}')
+  return info
